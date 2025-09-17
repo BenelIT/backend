@@ -28,7 +28,7 @@ export class RatiosService {
     return {
       // Profitability ratios
       grossMargin: ((dto.revenue - dto.cogs) / dto.revenue) * 100,
-      operatingMargin: (dto.ebit / dto.revenue) * 100,
+      operatingMargin: (dto.operatingIncome / dto.revenue) * 100,
       netProfitMargin: (dto.netIncome / dto.revenue) * 100,
       roa: (dto.netIncome / dto.TotalAssets) * 100, // Return on Assets
       roe: (dto.netIncome / dto.equity) * 100,          // Return on Equity

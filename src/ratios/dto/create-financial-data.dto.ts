@@ -15,8 +15,8 @@ export class CreateFinancialDataDto {
   cogs: number;
 
   @ApiProperty({ description: 'Earnings before interest and taxes.' })
-  @IsNumber({}, { message: 'EBIT must be a number.' })
-  ebit: number;
+  @IsNumber({}, { message: 'Operating Income must be a number.' })
+  operatingIncome: number;
 
   @ApiProperty({ description: 'Net income.' })
   @IsNumber({}, { message: 'Net income must be a number.' })
