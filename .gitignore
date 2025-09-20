@@ -1,9 +1,21 @@
-# compiled output
-/dist
-/node_modules
-/build
+# === Node.js general ===
+node_modules/
+dist/
+build/
+coverage/
+.nyc_output/
+temp/
+tmp/
 
-# Logs
+# === Backend y Frontend específicos ===
+backend/node_modules/
+backend/dist/
+backend/build/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# === Logs ===
 logs
 *.log
 npm-debug.log*
@@ -12,15 +24,16 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS
+# === OS ===
 .DS_Store
+Thumbs.db
 
-# Tests
-/coverage
-/.nyc_output
+# === Tests ===
+coverage/
+.nyc_output/
 
-# IDEs and editors
-/.idea
+# === IDEs and editors ===
+.idea/
 .project
 .classpath
 .c9/
@@ -28,29 +41,26 @@ lerna-debug.log*
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
+# VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# dotenv environment variable files
+# === Environment files ===
 .env
 .env.development.local
 .env.test.local
 .env.production.local
 .env.local
 
-# temp directory
-.temp
-.tmp
-
-# Runtime data
+# === Runtime data ===
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# === Diagnostic reports (https://nodejs.org/api/report.html) ===
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
